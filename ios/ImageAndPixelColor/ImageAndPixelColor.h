@@ -29,8 +29,14 @@ SOFTWARE.
  April, 2023
 */
 
-#ifndef ImageAndPixelColor_h
-#define ImageAndPixelColor_h
+#import <UIKit/UIKit.h>
 
+/*
+ A category on UIImage that enables you to query the color value of arbitrary
+ pixels of the image.
+ */
+@interface UIImage (ColorAtPixel)
 
-#endif /* ImageAndPixelColor_h */
+- (UIColor *)colorAtPixel:(CGPoint)point;
+
+@end
