@@ -52,7 +52,3 @@ export const pickColorOfPixeliOS = (path: any, options: any) => new Promise((res
     resolve(color.toUpperCase());
   });
 });
-
-export function multiply(a: number, b: number): Promise<number> {
-  return FetchPixelColor.multiply(a, b);
-}
