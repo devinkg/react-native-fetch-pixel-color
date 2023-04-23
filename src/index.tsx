@@ -44,8 +44,8 @@ export const pickColorOfPixelAndroid = (x: any, y: any) => new Promise((resolve,
   });
 });
 
-export const pickColorOfPixeliOS = (path, options) => new Promise((resolve, reject) => {
-  FetchPixelColor.getHex(path, options, (err, color) => {
+export const pickColorOfPixeliOS = (path: any, options: any) => new Promise((resolve, reject) => {
+  FetchPixelColor.getHex(path, options, (err: any, color: any) => {
     if (err) {
       return reject(err);
     }
