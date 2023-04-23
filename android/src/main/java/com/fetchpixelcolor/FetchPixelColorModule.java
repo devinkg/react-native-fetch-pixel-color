@@ -22,6 +22,7 @@ import java.io.File;
 @ReactModule(name = FetchPixelColorModule.NAME)
 public class FetchPixelColorModule extends ReactContextBaseJavaModule {
   public static final String NAME = "FetchPixelColor";
+  private Bitmap bitmap;
 
   public FetchPixelColorModule(ReactApplicationContext reactContext) {
     super(reactContext);
