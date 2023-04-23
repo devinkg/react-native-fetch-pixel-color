@@ -17,6 +17,33 @@ const FetchPixelColor = NativeModules.FetchPixelColor
       }
     );
 
+const rgb2hex = (rgb) => {
+  return (rgb && rgb.length === 3) ? '#' +
+    ('0' + parseInt(rgb[0], 10).toString(16)).slice(-2) +
+    ('0' + parseInt(rgb[1], 10).toString(16)).slice(-2) +
+    ('0' + parseInt(rgb[2], 10).toString(16)).slice(-2) : '';
+};
+
+export const setImage = (path) => new Promise((resolve, reject) => {
+  FetchPixelColor.setImage(path, (err, isSet) => {
+    if (err) {
+      return reject(err);
+    }
+    if (isSet) {
+      resolve('The image has been set sucessfully');
+    }
+  });
+});
+
+export const pickColorOfPixel = (x, y) => new Promise((resolve, reject) => {
+  FetchPixelColor.getRGB(x, y, (err, color) => {
+    if (err) {
+      return reject(err);
+    }
+    resolve(rgb2hex(color).toUpperCase());
+  });
+});
+
 export function multiply(a: number, b: number): Promise<number> {
   return FetchPixelColor.multiply(a, b);
 }
