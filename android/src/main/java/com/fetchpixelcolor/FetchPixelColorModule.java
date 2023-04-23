@@ -35,7 +35,7 @@ public class FetchPixelColorModule extends ReactContextBaseJavaModule {
   }
 
   @ReactMethod
-  public void init(String encodedImage, Callback callback) {
+  public void setImage(String encodedImage, Callback callback) {
     try {
       final byte[] decodedString = Base64.decode(encodedImage, Base64.DEFAULT);
       this.bitmap = BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
