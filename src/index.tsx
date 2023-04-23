@@ -24,7 +24,7 @@ const rgb2hex = (rgb) => {
     ('0' + parseInt(rgb[2], 10).toString(16)).slice(-2) : '';
 };
 
-export const setImage = (path) => new Promise((resolve, reject) => {
+export const setImageAndroid = (path) => new Promise((resolve, reject) => {
   FetchPixelColor.setImage(path, (err, isSet) => {
     if (err) {
       return reject(err);
@@ -35,7 +35,7 @@ export const setImage = (path) => new Promise((resolve, reject) => {
   });
 });
 
-export const pickColorOfPixel = (x, y) => new Promise((resolve, reject) => {
+export const pickColorOfPixelAndroid = (x, y) => new Promise((resolve, reject) => {
   FetchPixelColor.getRGB(x, y, (err, color) => {
     if (err) {
       return reject(err);
