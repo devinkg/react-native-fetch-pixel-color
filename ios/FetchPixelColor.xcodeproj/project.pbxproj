@@ -6,6 +6,10 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BF85CCCA29F589CE0096BF87 /* ImageAndPixelColor.m in Sources */ = {isa = PBXBuildFile; fileRef = BF85CCC929F589CE0096BF87 /* ImageAndPixelColor.m */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		58B511D91A9E6C8500147676 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -22,6 +26,8 @@
 		134814201AA4EA6300B7C361 /* libFetchPixelColor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFetchPixelColor.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5881CC2AC0600A0062D /* FetchPixelColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchPixelColor.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* FetchPixelColor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FetchPixelColor.mm; sourceTree = "<group>"; };
+		BF85CCC829F589840096BF87 /* ImageAndPixelColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageAndPixelColor.h; sourceTree = "<group>"; };
+		BF85CCC929F589CE0096BF87 /* ImageAndPixelColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageAndPixelColor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +52,20 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				BF85CCC729F589440096BF87 /* ImageAndPixelColor */,
 				B3E7B5881CC2AC0600A0062D /* FetchPixelColor.h */,
 				B3E7B5891CC2AC0600A0062D /* FetchPixelColor.mm */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		BF85CCC729F589440096BF87 /* ImageAndPixelColor */ = {
+			isa = PBXGroup;
+			children = (
+				BF85CCC829F589840096BF87 /* ImageAndPixelColor.h */,
+				BF85CCC929F589CE0096BF87 /* ImageAndPixelColor.m */,
+			);
+			path = ImageAndPixelColor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +125,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF85CCCA29F589CE0096BF87 /* ImageAndPixelColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
