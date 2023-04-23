@@ -52,3 +52,9 @@ export const pickColorOfPixeliOS = (path: any, options: any) => new Promise((res
     resolve(color.toUpperCase());
   });
 });
+
+export default {
+  setImageAndroid,
+  pickColorOfPixelAndroid,
+  pickColorOfPixeliOS
+}
